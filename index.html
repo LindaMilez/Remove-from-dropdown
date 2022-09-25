@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form action="/action_page.php">
+      <label for="colors">Choose a color</label>
+      <select name="colors" id="selected">
+        <option value="white">White</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+      </select>
+    </form>
+    <br />
+
+    <button onclick="myFunction()">Remove selected color</button>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("selected");
+        x.remove(x.selectedIndex);
+      }
+    </script>
+  </body>
+</html>
